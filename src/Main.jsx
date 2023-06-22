@@ -3,7 +3,7 @@ import React from "react";
 export default function Main(){
     return(
         <div>
-            <h1>Main</h1>
+            <h1 className="text-3xl font-bold underline">Main</h1>
         </div>
     )
 }
