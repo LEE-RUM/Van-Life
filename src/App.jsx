@@ -1,10 +1,24 @@
 import React from "react";
-import Main from "./Main";
+import { BrowserRouter, Routes, Route } from "react-router-dom"
+import Navbar from "./Navbar";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Vans from "./pages/Vans";
+import VanDetail from "./pages/VanDetail";
+
+
+import "./server"
 
 export default function App(){
   return (
-    <div>
-      <Main />
-    </div>
+    <BrowserRouter>
+      <Navbar/>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/vans" element={<Vans />} />
+        <Route path="/vans/:id" element={<VanDetail />} />
+      </Routes>
+    </BrowserRouter>
   )
 }
