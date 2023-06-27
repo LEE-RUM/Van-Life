@@ -11,7 +11,7 @@ export default function Vans() {
     }, []);
 
     const vanElements = vans.map((van) => (
-        <div key={van.id} className="bg-white p-4 rounded-md shadow-md">
+        <div key={van.id} className="bg-white p-4 rounded-md shadow-md hover:scale-105">
             <Link to={`/vans/${van.id}`}>
                 <img src={van.imageUrl} className="w-full" alt={van.name} />
                 <div className="mt-2">
