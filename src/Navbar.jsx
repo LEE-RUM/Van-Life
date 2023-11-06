@@ -8,6 +8,7 @@ export default function Navbar() {
         <Link to="/" className="ml-3 text-2xl">#VANLIFE</Link>
         <div className="mr-3 space-x-5">
           <Link to="/">Home</Link>
+          <Link to="/host">Host</Link>
           <Link to="/about">About</Link>
           <Link to="/vans">Vans</Link>
         </div>
