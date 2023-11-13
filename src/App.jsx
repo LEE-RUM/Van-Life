@@ -5,9 +5,9 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Vans from "./pages/Vans";
 import VanDetail from "./pages/VanDetail";
-import Dashboard from "./pages/Dashboard";
-import Income from "./pages/Income";
-import Reviews from "./pages/Reviews";
+import Dashboard from "./pages/host/Dashboard";
+import Income from "./pages/host/Income";
+import Reviews from "./pages/host/Reviews";
 
 import "./server"
 
